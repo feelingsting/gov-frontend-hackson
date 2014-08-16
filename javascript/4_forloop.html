@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>javascript for迴圈練習</title>
+  </head>
+  <body>
+    <div id="main"></div>
+    <script type='text/javascript'>
+      /*
+        練習在console裡面印出 Hello
+      */
+      console.log("hello");
+      /*
+        練習在console裡面印出 10個Hello
+      */
+      for(var i = 0; i < 10; i++){
+          console.log("hello")
+      }
+      /*
+        練習在console裡面印出 1 - 10
+      */
+      for(var i = 0; i < 10; i++){
+          console.log(i)
+      }
+      /*
+        練習在id為main印出 Hello, 可以參考前幾份html
+      */
+      var x = document.getElementById('main');
+      for(var i = 0; i<10; i++){
+          x.innerHTML += "Hello";
+      }
+      
+      /*
+        練習在id為main印出 10個 Hello
+      */
+
+    </script>
+  </body>
+</html>
+

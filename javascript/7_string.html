@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>javascript String練習</title>
+  </head>
+  <body>
+    <div id="main"></div>
+    <script type='text/javascript'>
+      /*
+        練習宣告一個叫做quote的string, 並且給定 I think, therefore I am.
+      */
+      var quote = "I think, therefore I am."
+      /*
+        印出 quote的長度
+      */
+      console.log(quote.length);
+      /*
+        使用for迴圈找到,的位置
+      */
+      for(var i in quote){
+          if(quote[i]==","){
+              console.log("index:" + i);
+          }
+      }
+      /*
+        上面的練習改用indexOf
+      */
+      console.log("index:" + quote.indexOf(","))
+      /*
+        將quote中的 think 取代成 code (使用replace)
+      */
+      //quote.replace("think","code");
+      /*
+        判斷quote 是不是有 think才取代
+      */
+
+      if(quote.match("think")){
+          var x = quote.replace("think","code");
+      }
+      console.log(x);
+
+    </script>
+  </body>
+</html>
